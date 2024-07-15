@@ -22,13 +22,13 @@ fun AppNavHost(appData: AppData, navController: NavHostController, modifier: Mod
             HomeScreen(appData = appData)
         }
         composable(route = Custom.route) {
-            CustomScreen()
+            CustomScreen(appData = appData)
         }
         composable(route = Voice.route) {
-            VoiceScreen()
+            VoiceScreen(appData = appData)
         }
         composable(route = Music.route) {
-            MusicScreen()
+            MusicScreen(appData = appData)
         }
         composable(route = Info.route) {
             InfoScreen(appData = appData)
